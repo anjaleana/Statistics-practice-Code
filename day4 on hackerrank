@@ -1,0 +1,13 @@
+#To find the standard Deviation for given the list of values
+import math
+n = int(input())
+arr = [int(x) for x in input().split(' ')]
+
+mean = sum(arr)/n
+c=0
+for i in range(0,len(arr)):
+    sub = math.pow((arr[i]-mean),2)
+    c= c+sub
+    std_deviation = c/n
+print("{:.1f}".format(math.sqrt(std_deviation)))    
+    
