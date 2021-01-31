@@ -1,0 +1,12 @@
+# To calculate the weigted mean
+N = int(input())
+arr = [int(i) for i in input().split(' ')]
+arr1 = [int(i) for i in input().split(' ')]
+sum1 =0 
+sum2 =0 
+for i in range(0,len(arr)):
+    sum1 = sum1+arr[i]*arr1[i]
+    sum2 = sum2+arr1[i]
+answer = sum1/sum2
+print("{:.1f}".format(answer))   
+    
